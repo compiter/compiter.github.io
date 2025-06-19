@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display:inline;
+            margin:10px
+        }
+        .flex{
+            display:flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color:bisque;
+            height: 300px;
+        }
+        .grid{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 10px;
+            row-gap: 10px;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            background-color: lightblue;
+            height: 300px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Css display property</h1>
+    <h2>inline vs inline -block</h2>
+    <li>home</li>
+    <li>sevices</li>
+    <li>about</li>
+    <li>projects</li>
+</hr>
+<h2>Flex box</h2>
+<div class="flex">
+    <div>Child1</div>
+    <div>Child2</div>
+    <div>Child3</div>
+    <div>Child4</div>
+    <div>Child5</div>
+    <div>Child6</div>
+</div>
+<h2>Grid</h2>
+<div class="grid">
+    <div>Child1</div>
+    <div>Child2</div>
+    <div>Child3</div>
+    <div>Child4</div>
+    <div>Child5</div>
+    <div>Child6</div>
+
+</body>
+</html>
