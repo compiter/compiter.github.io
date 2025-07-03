@@ -1,0 +1,10 @@
+db.employees.updateOne({email:"mike@gmail.com"},{$set:{salary:3000}})
+db.employees.updateMany({email:"mike@gmail.com"},{$set:{salary:3000}})
+db.employees.updateMany({},{$set:{points:1}})
+db.employees.updateMany({department:"IT"},{$inc:{points:3}})
+db.employees.updateMany({department:"IT"},{$inc:{points:-1}})
+db.employees.updateOne({email:"krishna@gmail.com"},{$set:{name:"Krish",department:"HR",salary:2700}},{upsert:true});
+db.employees.deleteOne({email:"krish@gmail.com"})
+db.employees.deleteMany({department:"Admin"})
+db.employees.updateMany({},{$pop:{location:1}})
+db.employees.updateMany({},)
